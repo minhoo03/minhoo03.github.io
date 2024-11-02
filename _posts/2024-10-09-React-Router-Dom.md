@@ -78,4 +78,13 @@ SPA는 기본적으로 CSR을 (렌더링 방식) 활용하여 페이지 전환 �
 ## 사용 사례
 ## v5 -> v6 변경된 점
 
+<!--
+
+switch
+route
+browserrouter
+
+-->
+
+
 
