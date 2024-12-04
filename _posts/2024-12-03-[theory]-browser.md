@@ -20,6 +20,8 @@ category: browser
 
 <!-- 이미지 -->
 
+![BrowserOperationFlow](../assets/img/browser-operation-flow.png)
+
 ### URL 파싱:
 
 사용자가 입력한 URL을 분석하여 스키마(프로토콜), 도메인, 경로 등을 구분한다.  
