@@ -18,25 +18,27 @@ category: browser
 
 브라우저는 다음과 같은 주요 구성 요소로 이루어져 있다.
 
-1. 사용자 인터페이스 (User Interface)
+![BrowserArchitecture](../assets/img/browser-architecture.png)
+
+**1. 사용자 인터페이스 (User Interface):**
 사용자가 브라우저와 상호작용하는 화면 요소를 제공한다. 주소창, 북마크, 뒤로/앞으로 가기 버튼 등이 이에 해당한다. (요청한 페이지를 보여주는 창을 제외한 나머지 부분이다.)
 
-2. 브라우저 엔진 (Browser Engine)
+**2. 브라우저 엔진 (Browser Engine):**
 사용자 인터페이스와 렌더링 엔진 사이에서 동작을 제어하며 (중개), 렌더링과 관련된 명령을 관리한다.
 
-3. 렌더링 엔진 (Rendering Engine)
+**3. 렌더링 엔진 (Rendering Engine):**
 요청한 콘텐츠를 표시한다. HTML, CSS를 해석해 화면에 표시하고, DOM(Document Object Model)과 CSSOM(CSS Object Model)을 생성한다.
 
-4. 통신 (Networking)
+**4. 통신 (Networking):**
 HTTP/HTTPS 요청을 처리하고 서버와의 데이터를 송수신한다.
 
-5. UI Backend
+**5. UI Backend:**
 콤보 박스와 윈도우 창 같은 기본적인 UI를 그림. 플랫폼에서 명시하지 않은 기본적인 인터페이스로서, OS 사용자 인터페이스 체계를 사용.
 
-6. JavaScript 엔진 (JS 해석기)
+**6. JavaScript 엔진 (JS 해석기):**
 JavaScript 코드를 실행하고, 웹 애플리케이션의 동적인 기능을 처리한다.
 
-7. 데이터 저장소
+**7. 데이터 저장소:**
 쿠키, 로컬 스토리지, 세션 스토리지 등 브라우저에 데이터를 저장하는 계층이다.
 
 
