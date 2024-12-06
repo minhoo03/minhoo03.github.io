@@ -27,6 +27,19 @@ category: browser
 사용자가 입력한 URL을 분석하여 스키마(프로토콜), 도메인, 경로 등을 구분한다.  
 이 과정에서 HTTP 또는 HTTPS 등 프로토콜의 종류를 확인한다.
 
+```javascript
+"https://example.com/path/to/resource?query=123#section";
+
+// result
+{
+    "protocol": "https",
+    "domain": "example.com",
+    "path": "/path/to/resource",
+    "query": "?query=123",
+    "hash": "#section"
+}
+```
+
 <!-- 구분 예시 -->
 
 ### HTTP 확인:
