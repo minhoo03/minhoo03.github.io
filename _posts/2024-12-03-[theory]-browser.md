@@ -45,16 +45,16 @@ category: browser
 브라우저는 웹 페이지를 다운로드하기 위해 응용 계층의 HTTP 프로토콜을 이용해 데이터를 송신/수신한다.
 이때, URL의 스키마(예: http:// 또는 https://)를 확인하여 요청에 사용할 프로토콜을 결정한다.
 
-<!-- // 만약 HTTP로 요청이 왔다면 HTTP 응답 헤더에 "Strict Transport Security"라는 필드를 포함하여 응답. -->
-
-<!--
-
 - - -
 
 #### HSTS 정책 조회
 URL의 스키마가 HTTP인 경우, 브라우저는 해당 도메인에 대해 HSTS(HTTP Strict Transport Security) 정책이 적용되어 있는지 확인한다.
 HSTS 정책이 적용된 도메인이라면, 브라우저는 HTTP 요청을 HTTPS로 강제 변환한다.
 이 과정은 브라우저 내부에 저장된 HSTS 캐시 또는 브라우저가 내장한 HSTS Preload 목록을 통해 이루어진다.
+
+<!-- // 만약 HTTP로 요청이 왔다면 HTTP 응답 헤더에 "Strict Transport Security"라는 필드를 포함하여 응답. -->
+
+<!--
 
 - - -
 
