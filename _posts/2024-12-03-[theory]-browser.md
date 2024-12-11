@@ -84,6 +84,8 @@ IP 주소를 기반으로 인터넷을 통해 요청이 올바른 서버로 전�
 IP 주소를 물리적인 MAC 주소로 변환한다.
 
 IP 주소는 전송 경로를 설정하기 위한 논리적 주소다. 그러나 실제 데이터 전송은 물리적 주소인 MAC 주소를 통해 이루어져야 한다.
+###### IP 주소 (Internet Protocol address, IP address, 인터넷 규약 주소)는 컴퓨터 네트워크에서 장치들이 서로를 인식하고 통신을 하기 위해서 사용하는 특수한 번호다. 
+###### MAC 주소(Media Access Control Address)는 네트워크 세그먼트의 데이터 링크 계층에서 통신을 위한 네트워크 인터페이스에 할당된 고유 식별자다.
 
 IP 패킷이 최종 목적지에 도달하려면 LAN(Local Area Network) 또는 이더넷 네트워크 내에서 MAC 주소가 필요하다.
 ARP(Address Resolution Protocol)는 네트워크 계층(IP 주소)와 데이터 링크 계층(MAC 주소)을 연결해 주는 역할을 한다.
