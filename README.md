@@ -1,8 +1,3 @@
-<!--
-### 한 줄씩 천천히 정리합니다.
-
-[React Query에 대해](https://minhoo03.github.io/react%20query/React-Query/)
--->
 
 ## 웹 개발에서 HTTP 기반 웹 네트워크와 브라우저 동작 원리를 이해해야 하는 이유
 
