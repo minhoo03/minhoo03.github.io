@@ -185,7 +185,21 @@ export default App;
 비동기 상태 관리를 위한 redux-thunk, redux-saga 등 프로젝트에 참여하는 개발자 성향에 맞춰야 하며, <br />
 러닝 커브 이슈로 생산성이 낮아지는 경우도 있다.
 
-이러한 이슈를 해결하기 위해 redux-toolkit이이 등장하였음에도 불구하고, 여전히 Boilerplate의 복잡도는 높았다.
+이러한 이슈를 해결하기 위해 redux-toolkit이 등장하였음에도 불구하고, 여전히 Boilerplate의 복잡도는 높았다.
+
+###### 아래는 위와 같은 예시는 아니지만 React Query의 장점을 보여주기 위해 극단적으로 짧게 짠 코드다.
+
+```javascript
+// 상태를 저장하기 위한 state나 redux 상태 대신
+// React Query의 훅을 사용하여 간편하게 데이터를 관리한다.
+const { data } = useQuery(["key"], getNikaData);
+
+const getData = async () => {
+  const data = await fetch("https://www....")
+		.then((res) => res.json());
+  return data;
+};
+```
 
 위는 비동기 데이터 호출을 위한 환경에 구축하는데 있어 불편함을 보여준것이고, 아래는 비동기 데이터 관리에 대한 내용이다.
 
