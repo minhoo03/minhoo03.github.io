@@ -192,13 +192,13 @@ export default App;
 ```javascript
 // 상태를 저장하기 위한 state나 redux 상태 대신
 // React Query의 훅을 사용하여 간편하게 데이터를 관리한다.
-const { data } = useQuery(["key"], getNikaData);
+const { data } = useQuery(["key"], getData);
 
 const getData = async () => {
-  const data = await fetch("https://www....")
-		.then((res) => res.json());
-  return data;
+  const response = await fetch("https://www....");
+  return response.json();
 };
+
 ```
 
 위는 비동기 데이터 호출을 위한 환경에 구축하는데 있어 불편함을 보여준것이고, 아래는 비동기 데이터 관리에 대한 내용이다.
