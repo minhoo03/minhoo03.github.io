@@ -143,16 +143,30 @@ MAC 주소를 이용해 이더넷 프레임에 패킷을 담아 전송한다.
 
 ### 브라우저에서 응답 해석 (렌더링 엔진):
 
-서버로부터 받은 HTML, CSS, JavaScript 파일을 브라우저의 렌더링 엔진이 처리한다.
+렌더링 엔진에서 사용자가 요청한 HTML 문서와 CSS, JS를 파싱하여 화면에 그린다.
 
 이 과정에서:
 *    HTML: DOM(Document Object Model)으로 변환.
 *    CSS: CSSOM(CSS Object Model)으로 변환.
 *    JavaScript: 브라우저의 JavaScript 엔진에서 실행.
 
-DOM과 CSSOM을 결합하여 렌더 트리를 생성하고, 이를 화면에 그려준다(페인팅).
+<!--
 
-<!-- 렌더링 과정 자세히 -->
+##### HTML 파싱
+엔진은 태그를 파싱하여 DOM(Document Object Model) node로 변환한다. DOM node들이 계층 구조로 구성되어 DOM tree가 구축된다.
+
+##### CSS 파싱
+HTML을 파싱하는 동시 CSS를 파싱하여, CSSOM(Cascading Style Sheet Object Model)을 생성한다.
+
+##### attachment (렌더 트리 생성)
+앞서 생성된 DOM tree와 CSSOM을 결합하여, 색상 및 면적 등의 시각적 정보를 담은 Render tree를 구축한다. 이 과정에서 화면에 표시되지 않는 DOM node(ex: head tag, display:none 속성의 node)는 제외된다.
+
+##### Reflow(Layout) & Repaint(Redraw) 그리고 Composite
+
+* Reflow는 레이아웃(margin, padding, width, height 등) 변경이 발생할때 트리거 되며, 연관된 노드의 레이아웃을 다시 계산하여 렌더트리를 조정한다.
+* Repaint는 가시성과 관련된(color, background-color, visibility 등) 변경이 발생할때 트리거 되며, 전체 노드의 가시성을 다시 확인하고 Layer를 생성한다.
+
+-->
 
 
 ## 브라우저의 기본 구조
