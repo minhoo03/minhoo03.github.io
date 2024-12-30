@@ -24,6 +24,7 @@ published: true
 순수 함수의 장점은 아래와 같다:
 * 함수가 독립적이며, Side-Effect가 없기에 Thread에 안전성을 보장받을 수 있다.
 * Thread에 안정성을 보장받아 병렬 처리를 동기화 없이 진행할 수 있다.
+* 병렬 처리와 메모이제이션을 적용하기 쉬워 성능을 향상 시키는데 도움을 준다.
 
  
 출처: https://mangkyu.tistory.com/111 [MangKyu's Diary:티스토리]
