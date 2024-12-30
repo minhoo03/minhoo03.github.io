@@ -193,6 +193,25 @@ HTTP/HTTPS 요청을 처리하고 서버와의 데이터를 송수신한다.
 **6. JavaScript 엔진 (JS 해석기):**
 JavaScript 코드를 실행하는 소프트웨어 컴포넌트다. 대표적인 예로 구글 크롬의 V8 엔진, 파이어폭스의 SpiderMonkey, 사파리의 JavaScriptCore (Nitro) 등이 있다. JS 엔진은 웹 브라우저나 Node.js와 같은 런타임 환경에서 사용된다.
 
+<details>
+<summary>JS엔진 동작 원리</summary>
+<div markdown="1">
+
+JS는 콜스택과 메모리힙이라는 구조를 통해 데이터를 관리하고, 코드 실행을 제어한다.
+
+👉 JS 엔진의 주요 구성요소
+
+1) Memory Heap : 메모리가 할당되는 공간이다.
+2) Call Stack : 코드 실행 흐름에 따라 함수 호출이 쌓이는 곳이다.
+> ❗ JS 엔진만으로는 웹이 완전히 동작하지 않는다. 이 외에도 런타임에서 처리되는 요소들이 있다.
+
+브라우저에서는 Web API(DOM, Ajax, setTimeout 등)를 통해 런타임이 구성된다. 버튼 클릭과 같은 사용자 이벤트, DOM 조작, HTTP 요청, 그리고 비동기 함수 호출(setTimeout 등)은 Web API와 상호작용하며, Web API는 실행될 콜백 함수를 Callback Queue에 추가한다.
+
+이러한 구조가 이벤트 루프를 통해 JS의 비동기 동작을 가능하게 한다.
+
+</div>
+</details>
+
 <!--
 런타임 환경은 컴퓨터가 실행되는 동안 프로세스나 프로그램을 위한 소프트웨어 서비스를 제공하는 가상 머신의 상태
 
